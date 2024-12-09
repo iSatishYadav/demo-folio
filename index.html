@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of sky - Web Developer</title>
+    <meta name="description" content="Welcome to the portfolio of sky, a passionate web developer specializing in creating dynamic and user-friendly websites, mobile apps, and innovative web solutions.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <div class="hamburger" aria-label="Toggle Navigation Menu">&#9776;</div>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h1>About Me</h1>
+        <p>
+            Hi, I'm sky, a passionate web developer with a love for creating dynamic and user-friendly websites. I enjoy learning new technologies and applying them to solve real-world problems.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Thumbnail of Project 1: Dynamic Website">
+                <figcaption>Project 1: Dynamic Website</figcaption>
+            </figure>
+            <p>A dynamic and responsive website built using modern web technologies.</p>
+        </article>
+        <article>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Thumbnail of Project 2: Mobile App">
+                <figcaption>Project 2: Mobile App</figcaption>
+            </figure>
+            <p>A cross-platform mobile app designed to streamline task management.</p>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            
+            <button type="submit" aria-label="Send Message">Send</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
